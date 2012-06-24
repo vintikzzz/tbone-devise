@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Pavel Tatarsky}]
   s.date = %q{2012-06-24}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Devise views for Tbone}
   s.email = %q{fazzzenda@mail.ru}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -52,6 +52,7 @@ Gem::Specification.new do |s|
     "app/controllers/users_controller.rb",
     "lib/tbone-devise.rb",
     "lib/tbone/devise/engine.rb",
+    "tbone-devise.gemspec",
     "test/helper.rb",
     "test/test_tbone-devise.rb"
   ]
@@ -59,7 +60,7 @@ Gem::Specification.new do |s|
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.6}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Devise views for Tbone}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

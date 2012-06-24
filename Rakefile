@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "tbone-devise"
   gem.homepage = "http://github.com/vintikzzz/tbone-devise"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Devise views for Tbone}
+  gem.description = %Q{Devise views for Tbone}
   gem.email = "fazzzenda@mail.ru"
   gem.authors = ["Pavel Tatarsky"]
   # dependencies defined in Gemfile

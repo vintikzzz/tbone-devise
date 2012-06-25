@@ -1,4 +1,5 @@
 define [
+  'bootstrap'
   'jquery'
   'models/user'
   'routers/sessions_router'
@@ -6,7 +7,11 @@ define [
   'tbone'
 ],
 
-($, User, SessionsRouter, LoginBar, Tbone) ->
+(App, $, User, SessionsRouter, LoginBar, Tbone) ->
+
+  App.Views.Sessions = {}
+  App.Views.Passwords = {}
+  App.Views.Confirmations = {}
 
   class TboneDevise
     constructor: (vars = {}) ->

@@ -50,7 +50,7 @@ define [
           @user.id = e.id
           @user.fetch()
           AlertQueue.add({type: 'success', message: I18n.t('devise.confirmation.confirmed')})
-          window.location.hash = "/posts"
+          window.location.hash = "/"
 
         error: (e, jqXHR) =>
           AlertQueue.add({type: 'error', message: I18n.t('devise.failure.invalid_token')})
@@ -93,6 +93,6 @@ define [
         success: (session, response) =>
           @user.set(@guest.attributes)
           AlertQueue.add({type: 'info', message: I18n.t('devise.sessions.signed_out')})
-          window.location.hash = "/posts"
+          window.location.hash = "/"
       )
 

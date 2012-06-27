@@ -15,7 +15,7 @@ define [
       @options.user.id = session.id
       @options.user.fetch()
       @addSuccessAlert(I18n.t('devise.registrations.signed_up'))
-      window.location.hash = "/posts"
+      window.location.hash = "/"
 
     error: (post, jqXHR) ->
       @model.set($.parseJSON(jqXHR.responseText))

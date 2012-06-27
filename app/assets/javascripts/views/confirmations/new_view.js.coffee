@@ -12,7 +12,7 @@ define [
 
     success: (session) ->
       @addSuccessAlert(I18n.t('devise.confirmations.send_instructions'))
-      window.location.hash = "/posts"
+      window.location.hash = "/"
 
     error: (post, jqXHR) ->
       @model.set($.parseJSON(jqXHR.responseText))

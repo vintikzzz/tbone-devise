@@ -15,4 +15,4 @@ define [
       @options.user.id = session.id
       @options.user.fetch()
       @addSuccessAlert(I18n.t('devise.sessions.signed_in'))
-      window.location.hash = "/posts"
+      window.location.hash = "/"

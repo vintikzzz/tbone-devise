@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tbone-devise}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Pavel Tatarsky}]
-  s.date = %q{2012-06-27}
+  s.date = %q{2012-07-08}
   s.description = %q{Devise views for Tbone}
   s.email = %q{fazzzenda@mail.ru}
   s.extra_rdoc_files = [
@@ -50,7 +50,11 @@ Gem::Specification.new do |s|
     "app/assets/javascripts/views/sessions/login_bar_view.js.coffee",
     "app/assets/javascripts/views/sessions/new_view.js.coffee",
     "app/controllers/users_controller.rb",
+    "app/views/devise/mailer/confirmation_instructions.html.erb",
+    "app/views/devise/mailer/reset_password_instructions.html.erb",
+    "app/views/devise/mailer/unlock_instructions.html.erb",
     "config/locales/tbone-devise.en.yml",
+    "config/routes.rb",
     "lib/tbone-devise.rb",
     "lib/tbone/devise/engine.rb",
     "tbone-devise.gemspec",

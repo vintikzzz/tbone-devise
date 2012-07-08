@@ -26,6 +26,7 @@ define [
       @user  = options.user
       @guest = options.guest
       @token = options.token
+      @modules = options.modules
       @session = new Session(@user)
       @user.on('change', =>
         @session = new Session(@user)
@@ -85,7 +86,7 @@ define [
 
     newSession: ->
       View = require 'views/sessions/new_view'
-      @view = new View(model: @session, user: @user, token: @token)
+      @view = new View(model: @session, user: @user, token: @token, modules: @modules)
       Layout.setContent(@view)
 
     destroy: ->

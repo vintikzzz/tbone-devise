@@ -13,6 +13,8 @@ define [
 
     success: (session) ->
       @options.user.id = session.id
-      @options.user.fetch()
+      @options.user.fetch(
+        success: ->
+          window.location.hash = "/"
+      )
       @addSuccessAlert(I18n.t('devise.sessions.signed_in'))
-      window.location.hash = "/"

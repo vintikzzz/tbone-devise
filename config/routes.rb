@@ -1,5 +1,4 @@
-Tbone::Engine.routes.draw do
-  resources :tokens
+Tbone::Devise::Engine.routes.draw do
   root :to => 'home#index'
   devise_for :users
   resources :users

@@ -10,7 +10,7 @@ define ['backbone', 'bootstrap'], (Backbone, App) ->
       'delete': '/users/sign_out.json'
     }
     isNew: ->
-      @user.get('abilities').signin
+      not @user.get('signed_in')
 
     sync: (method, model, options) ->
       if model.methodUrl && model.methodUrl[method.toLowerCase()]

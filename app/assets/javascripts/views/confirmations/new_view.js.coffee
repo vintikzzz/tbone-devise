@@ -8,7 +8,7 @@ define [
 ], ($, Backbone, App, FormView) ->
 
   class App.Views.Confirmations.NewView extends FormView
-    template: JST["templates/confirmations/new"]
+    template: JST["confirmations/new"]
 
     success: (session) ->
       @addSuccessAlert(I18n.t('devise.confirmations.send_instructions'))

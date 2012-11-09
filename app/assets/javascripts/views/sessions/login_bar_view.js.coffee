@@ -7,7 +7,7 @@ define [
 ], ($, Backbone, App) ->
 
   class App.Views.Sessions.LoginBar extends Backbone.View
-    template: JST["templates/sessions/login_bar"]
+    template: JST["sessions/login_bar"]
 
     initialize: ->
       @model.on('change', @render, this)
@@ -15,4 +15,4 @@ define [
     render: ->
       return unless @model?
       $(@el).html(@template(@model.toJSON()))
-      return this
+      @

@@ -9,7 +9,7 @@ define [
 ], ($, Backbone, App, Password, FormView) ->
 
   class App.Views.Passwords.NewView extends FormView
-    template: JST["templates/passwords/new"]
+    template: JST["passwords/new"]
 
     success: (session) ->
       @addSuccessAlert(I18n.t('devise.passwords.send_instructions'))

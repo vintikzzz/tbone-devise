@@ -10,3 +10,5 @@ group :development do
   gem "bundler"
   gem "jeweler"
 end
+gem 'tbone', path: '../tbone'
+gem 'devise'

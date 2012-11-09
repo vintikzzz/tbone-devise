@@ -92,6 +92,7 @@ define [
     destroy: ->
       @session.destroy(
         success: (session, response) =>
+          console.log(session)
           @user.set(@guest.attributes)
           AlertQueue.add({type: 'info', message: I18n.t('devise.sessions.signed_out')})
           window.location.hash = "/"

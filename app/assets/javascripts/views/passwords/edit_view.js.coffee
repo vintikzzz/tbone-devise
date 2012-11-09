@@ -8,7 +8,7 @@ define [
 ], ($, Backbone, App, FormView) ->
 
   class App.Views.Passwords.EditView extends FormView
-    template: JST["templates/passwords/edit"]
+    template: JST["passwords/edit"]
 
     success: (session) ->
       @addSuccessAlert(I18n.t('devise.passwords.updated'))

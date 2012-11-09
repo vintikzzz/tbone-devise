@@ -11,7 +11,7 @@
       .controls
         %input#password{name: "password", type: "password"}
 
-    :if $.inArray('rememberable', this.options.modules) != -1
+    - if $.inArray('rememberable', @options.modules) != -1
       .control-group
         %label.control-label{for: "remember_me"}= I18n.t('remember_me')
         .controls
@@ -20,14 +20,14 @@
     .form-actions
       %input#new-post.btn.btn-primary{type: "submit"}
 
-    :if $.inArray('registerable', this.options.modules) != -1
+    - if $.inArray('registerable', @options.modules) != -1
       %p
         %a{href: '#/signup'}= I18n.t('sign_up')
 
-    :if $.inArray('recoverable', this.options.modules) != -1
+    - if $.inArray('recoverable', @options.modules) != -1
       %p
         %a{href: '#/forgot'}= I18n.t('forgot_password') 
 
-    :if $.inArray('confirmable', this.options.modules) != -1
+    - if $.inArray('confirmable', @options.modules) != -1
       %p
         %a{href: '#/confirm'}= I18n.t('confirm')

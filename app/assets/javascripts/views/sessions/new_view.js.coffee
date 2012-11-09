@@ -9,7 +9,7 @@ define [
 ], ($, Backbone, App, Session, FormView) ->
 
   class App.Views.Sessions.NewView extends FormView
-    template: JST["templates/sessions/new"]
+    template: JST["sessions/new"]
 
     success: (session) ->
       @options.user.id = session.id

@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tbone-devise}
-  s.version = "0.1.4"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Pavel Tatarsky}]
-  s.date = %q{2012-10-28}
+  s.date = %q{2012-11-09}
   s.description = %q{Devise views for Tbone}
   s.email = %q{fazzzenda@mail.ru}
   s.extra_rdoc_files = [
@@ -36,12 +36,12 @@ Gem::Specification.new do |s|
     "app/assets/javascripts/routers/sessions_router.js.coffee",
     "app/assets/javascripts/tbone-devise.js.coffee",
     "app/assets/javascripts/templates/.gitkeep",
-    "app/assets/javascripts/templates/confirmations/new.jst.hamljs",
-    "app/assets/javascripts/templates/passwords/edit.jst.hamljs",
-    "app/assets/javascripts/templates/passwords/new.jst.hamljs",
-    "app/assets/javascripts/templates/registrations/new.jst.hamljs",
-    "app/assets/javascripts/templates/sessions/login_bar.jst.hamljs",
-    "app/assets/javascripts/templates/sessions/new.jst.hamljs",
+    "app/assets/javascripts/templates/confirmations/new.hamlc",
+    "app/assets/javascripts/templates/passwords/edit.hamlc",
+    "app/assets/javascripts/templates/passwords/new.hamlc",
+    "app/assets/javascripts/templates/registrations/new.hamlc",
+    "app/assets/javascripts/templates/sessions/login_bar.hamlc",
+    "app/assets/javascripts/templates/sessions/new.hamlc",
     "app/assets/javascripts/views/.gitkeep",
     "app/assets/javascripts/views/confirmations/new_view.js.coffee",
     "app/assets/javascripts/views/passwords/edit_view.js.coffee",
@@ -53,6 +53,7 @@ Gem::Specification.new do |s|
     "app/views/devise/mailer/confirmation_instructions.html.erb",
     "app/views/devise/mailer/reset_password_instructions.html.erb",
     "app/views/devise/mailer/unlock_instructions.html.erb",
+    "app/views/users/show.json.rabl",
     "config/locales/tbone-devise.en.yml",
     "config/routes.rb",
     "lib/tbone-devise.rb",
